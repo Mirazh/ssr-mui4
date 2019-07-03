@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node dist/main",
     "watch": "webpack --mode development --watch && nodemon dist/main",
-    "dev": "del dist public && webpack --mode development --progress",
-    "build": "del -f dist public && webpack --mode production --progress",
+    "dev": "del /F /Q dist public && webpack --mode development --progress",
+    "build": "del /F /Q dist public && webpack --mode production --progress",
     "stats": "webpack --profile --json > stats.json && webpack-bundle-analyzer stats.json dist"
   },
   "dependencies": {
